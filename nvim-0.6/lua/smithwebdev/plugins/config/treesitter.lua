@@ -3,7 +3,7 @@ local M = {}
 M.plugin = {
   'nvim-treesitter/nvim-treesitter',
   --'nvim-treesitter/nvim-treesitter-refactor',
-  'RRethy/nvim-treesitter-textsubjects',
+  --'RRethy/nvim-treesitter-textsubjects',
   'RRethy/nvim-treesitter-endwise',
   'nvim-treesitter/playground', --https://github.com/nvim-treesitter/playground
 
