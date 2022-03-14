@@ -12,6 +12,22 @@ coupled.
 
 #### Included Plugins
 [CMP](https://github.com/hrsh7th/nvim-cmp) - Completion plugin
+  - Additional CMP Plugins
+    - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
+    - [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
+    - [cmp-look](https://github.com/octaltree/cmp-look)
+    - [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
+    - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
+    - [cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua)
+    - [cmp-nvim-tags](https://github.com/quangnguyen30192/cmp-nvim-tags)
+    - [cmp-path](https://github.com/hrsh7th/cmp-path)
+    - [cmp-treesitter](https://github.com/ray-x/cmp-treesitter)
+    - [cmp-nvim-ultisnips](https://github.com/quangnguyen30192/cmp-nvim-ultisnips)
+  - Premade Snippet Plugins
+    - [vim-snippets](https://github.com/honza/vim-snippets)
+    - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
+
+
 [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 
 #### Inspirations
