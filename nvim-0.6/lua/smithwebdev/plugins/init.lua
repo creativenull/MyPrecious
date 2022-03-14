@@ -21,7 +21,7 @@ local plugins = {
   'animate',             -- https://github.com/camspiers/animate.vim
   'colorschemes',
   'indent_blankline',    -- https://github.com/lukas-reineke/indent-blankline.nvim
-  'shade',               -- https://github.com/sunjon/shade.nvim
+  --'shade',               -- https://github.com/sunjon/shade.nvim
   'statusline',          -- https://github.com/beauwilliams/statusline.lua
   'vim_smoothie',        -- https://github.com/psliwka/vim-smoothie
 
