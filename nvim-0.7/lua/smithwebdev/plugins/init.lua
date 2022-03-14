@@ -1,19 +1,19 @@
-local execute = vim.api.nvim_command
-local fn = vim.fn
-local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+local install_path = os.getenv('HOME').. '/.local/share/nvim-nightly/site/pack/packer/opt/packer.nvim'
 
-if fn.empty(fn.glob(install_path)) > 0 then
-  execute('!git clone https://github.com/wbthomason/packer.nvim '..install_path)
-  execute 'packadd packer.nvim'
+if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
+  local plugin_repo = 'https://github.com/wbthomason/packer.nvim'
+  local cli = string.format('!git clone %s %s', plugin_repo, install_path)
+  vim.cmd(cli)
 end
 
-
+vim.cmd 'packadd packer.nvim'
 local packer = require'packer'
 
 -- Use your local data path and not plugin/
 -- this is `~/.local/share/nvim/site/plugin/packer_compiled.lua` in WSL/Linux and MacOS
 packer.init {
-  compile_path = vim.fn.stdpath('data') .. '/site/plugin/packer_compiled.lua'
+  package_root = os.getenv('HOME') .. '/.local/share/nvim-nightly/site/pack',
+  compile_path = os.getenv('HOME') .. '/.config/nvim-nightly/plugin/packer_compiled.vim',
 }
 
 local plugins = {
