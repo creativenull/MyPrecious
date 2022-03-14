@@ -18,8 +18,8 @@ ls.config.set_config {
   store_selection_keys = "<c-s>",
 }
 
-ls.snippets = {
-  all = {
+ls.snippet = {
+  lua = {
     -- Available in any filetype
     ls.parser.parse_snippet("expand", "--this is what was expanded!"),
   },

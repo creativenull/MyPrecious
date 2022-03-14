@@ -81,7 +81,7 @@ M.plugin = {
       },
 
       mapping = {
-        ["<CR>"]  = cmp.mapping.confirm(),
+        ["<CR>"]  = cmp.mapping.confirm()
         --["<Tab>"] = cmp.mapping(function(fallback)
         --  if cmp.visible() then
         --    cmp.select_next_item()
@@ -258,10 +258,9 @@ M.plugin = {
 
         experimental  = {
           ghost_text  = true,
-          native_menu = false
+          native_menu = false,
         },
     })
-  end,
-}
-
+  end
+  }
 return M
