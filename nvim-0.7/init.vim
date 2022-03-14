@@ -16,3 +16,5 @@ set packpath^=~/.config/nvim-nightly
 set packpath+=~/.config/nvim-nightly/after
 set packpath^=~/.local/share/nvim-nightly/site
 set packpath+=~/.local/share/nvim-nightly/site/after
+
+lua require('smithwebdev')
