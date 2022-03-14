@@ -73,7 +73,7 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
-    config = { "\27LJ\2\n4\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\25smithwebdev.snippets\frequire\0" },
+    config = { "\27LJ\2\n=\0\0\2\0\2\0\t6\0\0\0009\0\1\0B\0\1\2\15\0\0\0X\1\3€6\0\0\0009\0\1\0B\0\1\1K\0\1\0\19expand_or_jump\alsD\0\0\3\0\3\0\v6\0\0\0009\0\1\0)\2ÿÿB\0\2\2\15\0\0\0X\1\4€6\0\0\0009\0\2\0)\2ÿÿB\0\2\1K\0\1\0\tjump\rjumpable\alsN\0\0\3\0\3\0\n6\0\0\0009\0\1\0B\0\1\2\15\0\0\0X\1\4€6\0\0\0009\0\2\0)\2\1\0B\0\2\1K\0\1\0\18change_choice\18choice_active\alsë\2\1\0\6\0\21\0%6\0\0\0'\2\1\0B\0\2\0016\0\2\0009\0\3\0009\0\4\0005\2\5\0'\3\6\0003\4\a\0005\5\b\0B\0\5\0016\0\2\0009\0\3\0009\0\4\0005\2\t\0'\3\n\0003\4\v\0005\5\f\0B\0\5\0016\0\2\0009\0\3\0009\0\4\0005\2\r\0'\3\14\0003\4\15\0B\0\4\0016\0\2\0009\0\3\0009\0\4\0'\2\16\0'\3\17\0'\4\18\0B\0\4\0016\0\19\0'\2\20\0B\0\2\1K\0\1\0\17luasnip file\nprintF<cmd>source ~/.config/nvim-nightly/lua/smithwebdev/snippets/*<CR>\20<Space><Space>s\6n\0\bc-l\1\3\0\0\6i\6s\1\0\1\vsilent\2\0\bc-j\1\3\0\0\6i\6s\1\0\1\vsilent\2\0\bc-k\1\3\0\0\6i\6s\bset\vkeymap\bvim\25smithwebdev.snippets\frequire\0" },
     load_after = {},
     loaded = true,
     needs_bufread = true,
@@ -177,7 +177,7 @@ time([[Sequenced loading]], true)
 vim.cmd [[ packadd LuaSnip ]]
 
 -- Config for: LuaSnip
-try_loadstring("\27LJ\2\n4\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\25smithwebdev.snippets\frequire\0", "config", "LuaSnip")
+try_loadstring("\27LJ\2\n=\0\0\2\0\2\0\t6\0\0\0009\0\1\0B\0\1\2\15\0\0\0X\1\3€6\0\0\0009\0\1\0B\0\1\1K\0\1\0\19expand_or_jump\alsD\0\0\3\0\3\0\v6\0\0\0009\0\1\0)\2ÿÿB\0\2\2\15\0\0\0X\1\4€6\0\0\0009\0\2\0)\2ÿÿB\0\2\1K\0\1\0\tjump\rjumpable\alsN\0\0\3\0\3\0\n6\0\0\0009\0\1\0B\0\1\2\15\0\0\0X\1\4€6\0\0\0009\0\2\0)\2\1\0B\0\2\1K\0\1\0\18change_choice\18choice_active\alsë\2\1\0\6\0\21\0%6\0\0\0'\2\1\0B\0\2\0016\0\2\0009\0\3\0009\0\4\0005\2\5\0'\3\6\0003\4\a\0005\5\b\0B\0\5\0016\0\2\0009\0\3\0009\0\4\0005\2\t\0'\3\n\0003\4\v\0005\5\f\0B\0\5\0016\0\2\0009\0\3\0009\0\4\0005\2\r\0'\3\14\0003\4\15\0B\0\4\0016\0\2\0009\0\3\0009\0\4\0'\2\16\0'\3\17\0'\4\18\0B\0\4\0016\0\19\0'\2\20\0B\0\2\1K\0\1\0\17luasnip file\nprintF<cmd>source ~/.config/nvim-nightly/lua/smithwebdev/snippets/*<CR>\20<Space><Space>s\6n\0\bc-l\1\3\0\0\6i\6s\1\0\1\vsilent\2\0\bc-j\1\3\0\0\6i\6s\1\0\1\vsilent\2\0\bc-k\1\3\0\0\6i\6s\bset\vkeymap\bvim\25smithwebdev.snippets\frequire\0", "config", "LuaSnip")
 
 time([[Sequenced loading]], false)
 if should_profile then save_profiles() end

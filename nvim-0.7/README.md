@@ -10,6 +10,10 @@ additional plugins that support the main plugin. This helps to keep the plugin
 init file clean, while keeping the responsibility of each plugin tightly
 coupled.
 
+#### TODO
+- Attempt to find a solution to make snippets more modular. Instead of one large file, there should be a way to not only break into filetypes, but to create the snippet based on the filetype of file currently working on
+
+
 #### Included Plugins
 [CMP](https://github.com/hrsh7th/nvim-cmp) - Completion plugin
   - Additional CMP Plugins
