@@ -72,6 +72,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/home/smith/.local/share/nvim-nightly/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/smith/.local/share/nvim-nightly/site/pack/packer/start/packer.nvim",

@@ -19,7 +19,7 @@ packer.init {
 local plugins = {
 
   -- Completion & Snippets -- 
-  --'cmp',                 -- https://github.com/hrsh7th/nvim-cmp
+  'cmp',                 -- https://github.com/hrsh7th/nvim-cmp
   --'luasnip',             -- https://github.com/L3MON4D3/LuaSnip
 
 }
@@ -29,7 +29,7 @@ packer.startup(function(use)
   use 'nvim-lua/plenary.nvim'
 
   for _, v in pairs(plugins) do
-    use(require('smithwebdev.plugins.config.'..v).plugin)
+    use(require('smithwebdev.plugins.configs.'..v).plugin)
   end
 end)
 
