@@ -7,7 +7,6 @@ M.plugin = {
 
   config = function()
     require('smithwebdev.snippets')
-
   end
 }
 
