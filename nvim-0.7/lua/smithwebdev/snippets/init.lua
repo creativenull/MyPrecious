@@ -26,4 +26,8 @@ ls.snippet = {
 }
 
 
+  --for _, v in pairs(snippets) do
+  --  use(require('smithwebdev.snippets.langs.'..v).snippet)
+  --end
+
 print('snippets installed!')
