@@ -21,7 +21,7 @@ M.plugin = {
       end
     end, { silent = true })
 
-    vim.keymap.set({"i", "s"}, "c-l", function()
+    vim.keymap.set("i", "c-l", function()
       if ls.choice_active() then 
         ls.change_choice(1)
       end
