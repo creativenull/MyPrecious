@@ -26,6 +26,10 @@ M.plugin = {
   },
 
   config = function()
+    local cmp = require('cmp')
+    local lspkind = require('lspkind')
+
+    
   end
 }
 
