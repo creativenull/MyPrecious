@@ -9,6 +9,9 @@ local inoremap = u.inoremap
 local tnoremap = u.tnoremap
 local vnoremap = u.vnoremap
 
+-- Map Leader
+--------------------------------------------------------------------------------
+vim.g.mapleader = " "
 
 -- Alternative Standards
 --------------------------------------------------------------------------------
