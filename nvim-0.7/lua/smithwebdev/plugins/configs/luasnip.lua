@@ -28,6 +28,7 @@ M.plugin = {
     end)
 
     vim.keymap.set("n", "<Space><Space>s", "<cmd>source ~/.config/nvim-nightly/lua/smithwebdev/snippets/*<CR>")
+    --vim.keymap.set("n", "<Space><Space>s", "<cmd>source ~/.config/nvim-nightly/lua/smithwebdev/snippets/langs/*<CR>")
 
     print('luasnip file')
   end
