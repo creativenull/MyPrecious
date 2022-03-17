@@ -22,6 +22,16 @@ ls.snippet = {
   lua = {
     -- Available in any filetype
     ls.parser.parse_snippet("expand", "--this is what was expanded!"),
+    ls.parser.parse_snippet("lf", "local $1 = function($2)\n  $0\nend")
+
+    --snip(
+    --  'req',
+    --  fmt([[local {} = require "{}"]],
+    --  { func(function(import_name) 
+    --    return import_name[1]
+    --  end, {1}), insert(1) }
+    --  )
+    --)
   },
 }
 

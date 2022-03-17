@@ -9,13 +9,13 @@ M.plugin = {
     require('smithwebdev.snippets')
 
     -- keybinds
-    vim.keymap.set({"i", "s"}, "c-k", function()
+    vim.keymap.set({"i", "s"}, "c-j", function()
       if ls.expand_or_jump() then
         ls.expand_or_jump()
       end
     end, { silent = true })
 
-    vim.keymap.set({"i", "s"}, "c-j", function()
+    vim.keymap.set({"i", "s"}, "c-k", function()
       if ls.jumpable(-1) then
         ls.jump(-1)
       end
@@ -27,7 +27,7 @@ M.plugin = {
       end
     end)
 
-    vim.keymap.set("n", "<Space><Space>s", "<cmd>source ~/.config/nvim-nightly/lua/smithwebdev/snippets/*<CR>")
+    vim.keymap.set("n", "<Space><Space>s", "<cmd>source ~/.config/nvim-nightly/lua/smithwebdev/snippets/init.lua<CR>")
     --vim.keymap.set("n", "<Space><Space>s", "<cmd>source ~/.config/nvim-nightly/lua/smithwebdev/snippets/langs/*<CR>")
 
     print('luasnip file')
