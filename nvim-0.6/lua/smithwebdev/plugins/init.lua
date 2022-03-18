@@ -96,4 +96,5 @@ packer.startup(function(use)
   end
 end)
 
+execute 'PackerSync'
 print('Plugins connected...')

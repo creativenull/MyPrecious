@@ -21,7 +21,7 @@ M.plugin = {
     'ray-x/cmp-treesitter',                -- https://github.com/ray-x/cmp-treesitter
     'saadparwaiz1/cmp_luasnip',            -- https://github.com/saadparwaiz1/cmp_luasnip
   },
- 
+
   config = function()
     local cmp = require('cmp')
     local lspkind = require('lspkind')
@@ -39,21 +39,21 @@ M.plugin = {
 
     local press = function(key)
       vim.api.nvim_feedkeys(
-        vim.api.nvim_replace_termcodes(key, true, true, true),
-        "n", true)
+      vim.api.nvim_replace_termcodes(key, true, true, true),
+      "n", true)
     end
 
     cmp.setup.cmdline(
-      ':', {
-        sources = {
-          {name = 'cmdline'}
-        },
-      })
+    ':', {
+      sources = {
+        {name = 'cmdline'}
+      },
+    })
     cmp.setup.cmdline(
     '/', {
       sources = {
         {name = 'buffer'}
-    }
+      }
     })
     cmp.setup({
       snippet = {
@@ -106,9 +106,9 @@ M.plugin = {
         --["<C-u>"] = cmp.mapping.scroll_docs(-4),
         --["<C-d>"] = cmp.mapping.scroll_docs(4),
         --["<C-e>"] = cmp.mapping.close(),
-        --["<C-j>"] = cmp.mapping.select_next_item{ 
+        --["<C-j>"] = cmp.mapping.select_next_item){ 
         --  behavior = cmp.SelectBehavior.Select 
-        --},
+        --}),
         --["<C-k>"] = cmp.mapping.select_prev_item{ 
         --  behavior = cmp.SelectBehavior.Select 
         --},
@@ -251,15 +251,16 @@ M.plugin = {
             buffer    = '[Buffer]',
             orgmode   = '[Orgmode]',
             path      = '[Path]'
-            })
           })
-        },
-
+        }),
         experimental  = {
           ghost_text  = true,
           native_menu = false,
         },
+      },
+
     })
   end
-  }
+}
+
 return M

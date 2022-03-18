@@ -28,6 +28,7 @@ M.plugin = {
   config = function()
     local cmp = require('cmp')
     local lspkind = require('lspkind')
+    lspkind.init()
 
     local has_any_words_before = function()
       if vim.api.nvim_buf_get_option(0, "buftype") == "prompt" then
@@ -59,37 +60,43 @@ M.plugin = {
         end,
       },
       mapping = {
-        --["<c-j>"] = cmp.mapping(function(fallback)
-        --  if cmp.visible() then
-        --    cmp.select_next_item()
-        --  elseif luasnip.expand_or_jumpable() then
-        --    luasnip.expand_or_jump()
-        --  elseif has_words_before() then
-        --    cmp.complete()
-        --  else
-        --    fallback()
-        --  end
-        --end, {"i", "s" }),
+        ["<c-j>"] = cmp.mapping(function(fallback)
+          if cmp.visible() then
+            cmp.select_next_item()
+          elseif luasnip.expand_or_jumpable() then
+            luasnip.expand_or_jump()
+          elseif has_words_before() then
+            cmp.complete()
+          else
+            fallback()
+          end
+        end, {"i", "s" }),
 
-        --["<c-k>"] = cmp.mapping(function(fallback)
-        --  if cmp.visible() then
-        --    cmp.select_prev_item()
-        --  elseif luasnip.jumpable(-1) then
-        --    luasnip.jump(-1)
-        --  else
-        --    fallback()
-        --  end
-        --end, {"i", "s" }),
+        ["<c-k>"] = cmp.mapping(function(fallback)
+          if cmp.visible() then
+            cmp.select_prev_item()
+          elseif luasnip.jumpable(-1) then
+            luasnip.jump(-1)
+          else
+            fallback()
+          end
+        end, {"i", "s" }),
 
-        --["<C-u>"] = cmp.mapping.scroll_docs(-4),
-        --["<C-d>"] = cmp.mapping.scroll_docs(4),
+        ["<C-d>"] = cmp.mapping.scroll_docs(-4),
+        ["<C-f>"] = cmp.mapping.scroll_docs(4),
+        ["<C-e>"] = cmp.mapping.close(),
+        ["<C-y>"] = cmp.mapping.confirm {
+          behavior = cmp.ConfirmBehavior.Insert,
+          select = true
+        },
+        ["<c-Space>"] = cmp.mapping.complete()
       },
       sources = {
         { name = 'luasnip'},
         { name = 'tags'},
         { name = 'nvim_lsp'},
         { name = 'nvim_lua'},
-        { name = 'buffer'},
+        { name = 'buffer', keyword_length = 5 },
         { name = 'path'},
         { name = 'orgmode'},
       },
