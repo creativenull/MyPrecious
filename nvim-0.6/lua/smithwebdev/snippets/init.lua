@@ -8,6 +8,7 @@ local insert   = ls.insert_node
 local func     = ls.function_node
 local choice   = ls.choice_node
 local dynamicn = ls.dynamic_node
+local fmt = require("luasnip.extras.fmt").fmt
 
 ls.config.set_config {
   history = true,
@@ -24,9 +25,7 @@ end
 
 ls.snippets = {
   lua = {
-    snip(
-      'req',
-      fmt([[local {} = require "{}"]],
+    snip( 'req', fmt([[local {} = require "{}"]],
       { func(function(import_name) 
         return import_name[1]
       end, {1}), insert(1) }
