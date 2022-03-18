@@ -56,6 +56,10 @@ M.plugin = {
     cmp.setup({
       snippet = {
         expand = function(args)
+          local luasnip = prequire('luasnip')
+          if not luasnip then
+            return
+          end
           require('luasnip').lsp_expand(args.body)
         end,
       },

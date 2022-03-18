@@ -8,36 +8,19 @@ local insert   = ls.insert_node
 local func     = ls.function_node
 local choic    = ls.choice_node
 local dynamicn = ls.dynamic_node
+local fmt = require('luasnip.extras.fmt').fmt
 
-ls.config.set_config {
-  history = true,
-  updateevents = "TextChanged, TextChangedI",
-  ext_base_prio = 200,
-  ext_prio_increase = 1,
-  enable_autosnippets = false,
-  store_selection_keys = "<c-s>",
-}
+local date = function() return { os.date('%Y-%m-%d') } end
 
-ls.snippet = {
-  lua = {
-    -- Available in any filetype
-    ls.parser.parse_snippet("expand", "--this is what was expanded!"),
-    ls.parser.parse_snippet("lf", "local $1 = function($2)\n  $0\nend")
-
-    --snip(
-    --  'req',
-    --  fmt([[local {} = require "{}"]],
-    --  { func(function(import_name) 
-    --    return import_name[1]
-    --  end, {1}), insert(1) }
-    --  )
-    --)
-  },
-}
-
-
-  --for _, v in pairs(snippets) do
-  --  use(require('smithwebdev.snippets.langs.'..v).snippet)
-  --end
-
+--ls.snippets = {
+--  all = {
+--    snip({
+--      trig = 'date',
+--      name = 'Date',
+--      dscr = 'Date in the form of YYYY-MM-DD'
+--    }),
+--  }
+--}
 print('snippets installed!')
+
+
