@@ -15,6 +15,15 @@ local fmt   = require('luasnip.extras.fmt').fmt
 
 local date  = function() return { os.date('%Y-%m-%d') } end
 
+ls.snippets = {
+  all = {
+    s("ternary", {
+      i(1, "cond"), t(" ? "), i(2, "then"), t(" : "), i(3, "else")
+    })
+  },
+
+  lua = {
+  },
+}
+
 print('snippets installed!')
-
-
