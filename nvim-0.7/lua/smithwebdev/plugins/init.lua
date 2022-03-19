@@ -19,8 +19,8 @@ packer.init {
 local plugins = {
 
   -- Completion & Snippets -- 
-  'cmp',                 -- https://github.com/hrsh7th/nvim-cmp
   'luasnip',             -- https://github.com/L3MON4D3/LuaSnip
+  'cmp',                 -- https://github.com/hrsh7th/nvim-cmp
 
   -- Editing
   'surround',            -- https://github.com/tpope/vim-surround
