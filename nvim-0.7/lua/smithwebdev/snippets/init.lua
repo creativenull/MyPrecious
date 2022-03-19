@@ -19,10 +19,12 @@ ls.snippets = {
   all = {
     s("ternary", {
       i(1, "cond"), t(" ? "), i(2, "then"), t(" : "), i(3, "else")
-    })
+    }),
+    ls.parser.parse_snippet('expand', '-- this is what was expanded!')
   },
 
   lua = {
+    ls.parser.parse_snippet('lf', 'local $1 = function($2)\n  $0\nend'),
   },
 }
 

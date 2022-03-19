@@ -28,6 +28,8 @@ M.plugin = {
   config = function()
     local cmp = require('cmp')
     local lspkind = require('lspkind')
+    local luasnip = require('luasnip')
+
     lspkind.init()
 
     local has_any_words_before = function()
@@ -56,7 +58,7 @@ M.plugin = {
     cmp.setup({
       snippet = {
         expand = function(args)
-          local luasnip = prequire('luasnip')
+          local luasnip = require('luasnip')
           if not luasnip then
             return
           end
@@ -85,7 +87,6 @@ M.plugin = {
             fallback()
           end
         end, {"i", "s" }),
-
         ["<C-d>"] = cmp.mapping.scroll_docs(-4),
         ["<C-f>"] = cmp.mapping.scroll_docs(4),
         ["<C-e>"] = cmp.mapping.close(),
