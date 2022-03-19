@@ -22,6 +22,10 @@ local plugins = {
   'cmp',                 -- https://github.com/hrsh7th/nvim-cmp
   'luasnip',             -- https://github.com/L3MON4D3/LuaSnip
 
+  -- Editing
+  'surround',            -- https://github.com/tpope/vim-surround
+  'easyalign',          -- https://github.com/junegunn/vim-easy-align
+
   -- Fuzzy / File Finder
   'harpoon',
   'telescope',           -- https://github.com/nvim-telescope/telescope.nvim  **

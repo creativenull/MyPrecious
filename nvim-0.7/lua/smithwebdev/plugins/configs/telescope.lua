@@ -10,7 +10,6 @@ M.plugin = {
     'nvim-telescope/telescope-file-browser.nvim',
     'nvim-telescope/telescope-frecency.nvim',
     'nvim-telescope/telescope-fzy-native.nvim',
-    --'fhill2/telescope-ultisnips.nvim',
     'benfowler/telescope-luasnip.nvim',
     'ThePrimeagen/harpoon'
     },
@@ -40,12 +39,10 @@ M.plugin = {
         --  override_generic_sorter = false,
         --  override_file_sorter = true,
         --},
-        dash = {
-        },
+        dash = {},
       },
     })
 
-    --telescope.load_extension('ultisnips')
     telescope.load_extension('file_browser')
     telescope.load_extension('luasnip')
 
