@@ -47,7 +47,7 @@ M.plugin = {
     telescope.load_extension('luasnip')
 
     function _G.TelescopeFindConfigFiles()
-      local configdir = vim.fn.stdpath('config')
+      local configdir = vim.fn.expand('$HOME/.config/nvim-nightly')
       telescope_builtin.find_files({
         find_command = { 'rg', '--files', '--iglob', '!.git', '--hidden', configdir },
         previewer = false,

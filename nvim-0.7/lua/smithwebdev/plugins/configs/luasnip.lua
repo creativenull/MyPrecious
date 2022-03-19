@@ -27,11 +27,11 @@ M.plugin = {
     }
 
     -- keybinds
-    --vim.keymap.set("i", "<c-l>", function()
-    --  if ls.choice_active() then 
-    --    ls.change_choice(1)
-    --  end
-    --end)
+    vim.keymap.set("i", "<c-l>", function()
+      if ls.choice_active() then 
+        ls.change_choice(1)
+      end
+    end)
 
     vim.keymap.set("n", "<Space><Space>s", "<cmd>source ~/.config/nvim-nightly/lua/smithwebdev/snippets/init.lua<CR>")
 
