@@ -22,6 +22,12 @@ local plugins = {
   'cmp',                 -- https://github.com/hrsh7th/nvim-cmp
   'luasnip',             -- https://github.com/L3MON4D3/LuaSnip
 
+  -- Fuzzy / File Finder
+  'harpoon',
+  'telescope',           -- https://github.com/nvim-telescope/telescope.nvim  **
+
+  -- Git
+  'lazygit',             -- https://github.com/kdheepak/lazygit.nvim **
 }
 
 packer.startup(function(use)
