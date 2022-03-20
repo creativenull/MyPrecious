@@ -47,9 +47,12 @@ coupled.
     - Premade Snippet Plugins
       - [vim-snippets](https://github.com/honza/vim-snippets)
       - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
-- Useful Editor Plugins
-  - [vim-surround](https://github.com/tpope/vim-surround)
+- Useful Editor Improvements
+  - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
+  - [nvim-hlslens](https://github.com/kevinhwang91/nvim-hlslens)
   - [vim-easy-align](https://github.com/junegunn/vim-easy-align)
+  - [vim-peekaboo](https://github.com/junegunn/vim-peekaboo)
+  - [vim-surround](https://github.com/tpope/vim-surround)
 
 #### Inspirations
 [Elianiva's Dotfiles](https://github.com/elianiva/dotfiles/tree/master/config/nvim)
