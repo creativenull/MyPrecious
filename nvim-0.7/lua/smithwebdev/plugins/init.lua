@@ -23,8 +23,9 @@ local plugins = {
   'cmp',                 -- https://github.com/hrsh7th/nvim-cmp
 
   -- Editing
-  'surround',            -- https://github.com/tpope/vim-surround
   'easyalign',          -- https://github.com/junegunn/vim-easy-align
+  'hlslens',             -- https://github.com/kevinhwang91/nvim-hlslens
+  'surround',            -- https://github.com/tpope/vim-surround
 
   -- Filetype
   'markdown_preview',    -- https://github.com/iamcco/markdown-preview.nvim
