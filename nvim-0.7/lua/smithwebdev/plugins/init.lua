@@ -27,6 +27,7 @@ local plugins = {
   'easyalign',          -- https://github.com/junegunn/vim-easy-align
 
   -- Filetype
+  'markdown_preview',    -- https://github.com/iamcco/markdown-preview.nvim
   'rails',               -- https://github.com/tpope/vim-rails
 
   -- Fuzzy / File Finder
