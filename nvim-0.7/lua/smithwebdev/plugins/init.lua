@@ -21,6 +21,7 @@ local plugins = {
   -- Aesthetics --
   'animate',             -- https://github.com/camspiers/animate.vim
   'indent_blankline',    -- https://github.com/lukas-reineke/indent-blankline.nvim
+  'vim-smoothie',        -- https://github.com/psliwka/vim-smoothie
 
   -- Completion & Snippets -- 
   'luasnip',             -- https://github.com/L3MON4D3/LuaSnip
@@ -28,7 +29,9 @@ local plugins = {
 
   -- Editing
   'easyalign',          -- https://github.com/junegunn/vim-easy-align
+  'emmet',               -- https://github.com/mattn/emmet-vim
   'hlslens',             -- https://github.com/kevinhwang91/nvim-hlslens
+  'marks',               -- https://github.com/chentau/marks.nvim
   'peekabo',             -- https://github.com/junegunn/vim-peekaboo
   'surround',            -- https://github.com/tpope/vim-surround
 

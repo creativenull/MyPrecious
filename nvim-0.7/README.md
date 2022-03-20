@@ -29,7 +29,7 @@ coupled.
   - [vim-rails](https://github.com/tpope/vim-rails)
 - Git 
   - [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim)
-- Keybindings
+- Keybindings Reference
   - [which-key.nvim](https://github.com/folke/which-key.nvim)
 - Snippets and Completion Plugins
   - [luaSnip](https://github.com/L3MON4D3/LuaSnip)
@@ -48,7 +48,9 @@ coupled.
       - [vim-snippets](https://github.com/honza/vim-snippets)
       - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
 - Useful Editor Improvements
+  - [emmet-vim](https://github.com/mattn/emmet-vim)
   - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
+  - [marks.nvim](https://github.com/chentau/marks.nvim)
   - [nvim-hlslens](https://github.com/kevinhwang91/nvim-hlslens)
   - [vim-easy-align](https://github.com/junegunn/vim-easy-align)
   - [vim-peekaboo](https://github.com/junegunn/vim-peekaboo)
@@ -56,6 +58,7 @@ coupled.
 - **PURELY FOR AESTHETICS**
   - [animate.vim](https://github.com/camspiers/animate.vim)
     - [lens.vim](https://github.com/camspiers/lens.vim)
+  - [vim-smoothie](https://github.com/psliwka/vim-smoothie)
 
 #### Inspirations
 [Elianiva's Dotfiles](https://github.com/elianiva/dotfiles/tree/master/config/nvim)
