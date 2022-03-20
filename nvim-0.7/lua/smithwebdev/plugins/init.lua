@@ -26,12 +26,18 @@ local plugins = {
   'surround',            -- https://github.com/tpope/vim-surround
   'easyalign',          -- https://github.com/junegunn/vim-easy-align
 
+  -- Filetype
+  'rails',               -- https://github.com/tpope/vim-rails
+
   -- Fuzzy / File Finder
   'harpoon',
-  'telescope',           -- https://github.com/nvim-telescope/telescope.nvim  **
+  'telescope',           -- https://github.com/nvim-telescope/telescope.nvim
 
   -- Git
-  'lazygit',             -- https://github.com/kdheepak/lazygit.nvim **
+  'lazygit',             -- https://github.com/kdheepak/lazygit.nvim
+
+  -- Keybinds
+  'whichkey',            -- https://github.com/folke/which-key.nvim
 }
 
 packer.startup(function(use)
