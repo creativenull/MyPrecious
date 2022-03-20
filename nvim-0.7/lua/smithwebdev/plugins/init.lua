@@ -19,6 +19,7 @@ packer.init {
 local plugins = {
 
   -- Aesthetics --
+  'animate',             -- https://github.com/camspiers/animate.vim
   'indent_blankline',    -- https://github.com/lukas-reineke/indent-blankline.nvim
 
   -- Completion & Snippets -- 

@@ -53,6 +53,9 @@ coupled.
   - [vim-easy-align](https://github.com/junegunn/vim-easy-align)
   - [vim-peekaboo](https://github.com/junegunn/vim-peekaboo)
   - [vim-surround](https://github.com/tpope/vim-surround)
+- **PURELY FOR AESTHETICS**
+  - [animate.vim](https://github.com/camspiers/animate.vim)
+    - [lens.vim](https://github.com/camspiers/lens.vim)
 
 #### Inspirations
 [Elianiva's Dotfiles](https://github.com/elianiva/dotfiles/tree/master/config/nvim)
