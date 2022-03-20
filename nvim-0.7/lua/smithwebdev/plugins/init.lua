@@ -25,6 +25,7 @@ local plugins = {
   -- Editing
   'easyalign',          -- https://github.com/junegunn/vim-easy-align
   'hlslens',             -- https://github.com/kevinhwang91/nvim-hlslens
+  'peekabo',             -- https://github.com/junegunn/vim-peekaboo
   'surround',            -- https://github.com/tpope/vim-surround
 
   -- Filetype
