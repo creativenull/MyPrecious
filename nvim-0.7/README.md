@@ -12,30 +12,46 @@ coupled.
 
 #### TODO
 - Attempt to find a solution to make snippets more modular. Instead of one large file, there should be a way to not only break into filetypes, but to create the snippet based on the filetype of file currently working on
-
+  - UPDATE: Luasnip and cmp now working properly, but still havent split the
+    snippets into their own files.
+  - NEW HEADACHE: Realizing that a lot of my config requires a relaunch of the
+    application with each change. Hopefully will find a resolution while being
+    able to maintain the current format or have very little change necessary...
+    ie Pray for me
 
 #### Included Plugins
-[CMP](https://github.com/hrsh7th/nvim-cmp) - Completion plugin
-  - Additional CMP Plugins
-    - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
-    - [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
-    - [cmp-look](https://github.com/octaltree/cmp-look)
-    - [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
-    - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
-    - [cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua)
-    - [cmp-nvim-tags](https://github.com/quangnguyen30192/cmp-nvim-tags)
-    - [cmp-path](https://github.com/hrsh7th/cmp-path)
-    - [cmp-treesitter](https://github.com/ray-x/cmp-treesitter)
-    - [cmp-nvim-ultisnips](https://github.com/quangnguyen30192/cmp-nvim-ultisnips)
-  - Premade Snippet Plugins
-    - [vim-snippets](https://github.com/honza/vim-snippets)
-    - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
 
-
-[LuaSnip](https://github.com/L3MON4D3/LuaSnip)
+- File Finders
+  - [harpoon](https://github.com/ThePrimeagen/harpoon) "Yeah Yeah"
+  - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- FileType Specific Plugins
+  - [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
+  - [vim-rails](https://github.com/tpope/vim-rails)
+- Git 
+  - [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim)
+- Keybindings
+  - [which-key.nvim](https://github.com/folke/which-key.nvim)
+- Snippets and Completion Plugins
+  - [luaSnip](https://github.com/L3MON4D3/LuaSnip)
+  - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+    - Additional CMP Plugins
+      - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
+      - [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
+      - [cmp-look](https://github.com/octaltree/cmp-look)
+      - [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
+      - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
+      - [cmp-nvim-lua](https://github.com/hrsh7th/cmp-nvim-lua)
+      - [cmp-nvim-tags](https://github.com/quangnguyen30192/cmp-nvim-tags)
+      - [cmp-path](https://github.com/hrsh7th/cmp-path)
+      - [cmp-treesitter](https://github.com/ray-x/cmp-treesitter)
+    - Premade Snippet Plugins
+      - [vim-snippets](https://github.com/honza/vim-snippets)
+      - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
+- Useful Editor Plugins
+  - [vim-surround](https://github.com/tpope/vim-surround)
+  - [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 
 #### Inspirations
-[Elianiva's
-Dotfiles](https://github.com/elianiva/dotfiles/tree/master/config/nvim)
+[Elianiva's Dotfiles](https://github.com/elianiva/dotfiles/tree/master/config/nvim)
 
 
