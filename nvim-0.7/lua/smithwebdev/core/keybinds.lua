@@ -8,6 +8,7 @@ local nnoremap = u.nnoremap
 local inoremap = u.inoremap
 local tnoremap = u.tnoremap
 local vnoremap = u.vnoremap
+local default_opts = {noremap = false, silent = true}
 
 -- Map Leader
 --------------------------------------------------------------------------------
@@ -78,3 +79,4 @@ nnoremap("<C-l>",        "<C-w><C-l>",              { desc = "Go to the right wi
 nnoremap("<C-j>",        "<C-w><C-j>",              { desc = "Go to the bottom window" })
 nnoremap("<C-k>",        "<C-w><C-k>",              { desc = "Go to the top window" })
 
+vim.api.nvim_set_keymap('i', '<c-l>', '<cmd>lua EscapePair()<CR>', default_opts)
