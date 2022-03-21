@@ -38,6 +38,7 @@ local plugins = {
   -- Filetype
   'markdown_preview',    -- https://github.com/iamcco/markdown-preview.nvim
   'rails',               -- https://github.com/tpope/vim-rails
+  'sniprun',             --  https://github.com/michaelb/sniprun
 
   -- Fuzzy / File Finder
   'harpoon',
@@ -48,6 +49,9 @@ local plugins = {
 
   -- Keybinds
   'whichkey',            -- https://github.com/folke/which-key.nvim
+
+  -- Treesitter/ Syntax Highlighting
+  'treesitter',          -- https://github.com/nvim-treesitter/nvim-treesitter
 }
 
 packer.startup(function(use)
