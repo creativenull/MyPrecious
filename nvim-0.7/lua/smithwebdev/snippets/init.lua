@@ -27,7 +27,8 @@ ls.snippets = {
 
   lua = {
     s("req", fmt("local {} = require('{}')", { i(1), rep(1)})),
-    s('pcreate', fmt("local M = {{}},\n\nM.plugin = {{\n  '{}',\n\n  config = function()\n    {}\n  end\n}}\n\nreturn M",  {i(1), i(2)}))
+    s('pcreate', fmt("local M = {{}},\n\nM.plugin = {{\n  '{}',\n\n  config = function()\n    {}\n  end\n}}\n\nreturn M",  {i(1), i(2)})),
+    s('keymap', fmt("{}noremap('{}',  '{}', {{ desc = '{}'}})", {i(1), i(2), i(3), i(4)}))
   },
 }
 

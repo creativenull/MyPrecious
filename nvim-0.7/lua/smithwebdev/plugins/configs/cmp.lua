@@ -14,7 +14,6 @@ M.plugin = {
     'quangnguyen30192/cmp-nvim-tags',      -- https://github.com/quangnguyen30192/cmp-nvim-tags
     'hrsh7th/cmp-path',                    -- https://github.com/hrsh7th/cmp-path
     'ray-x/cmp-treesitter',                -- https://github.com/ray-x/cmp-treesitter
-    'quangnguyen30192/cmp-nvim-ultisnips', -- https://github.com/quangnguyen30192/cmp-nvim-ultisnips
 
     -- Additional 
     'onsails/lspkind-nvim',                -- https://github.com/onsails/lspkind-nvim},
