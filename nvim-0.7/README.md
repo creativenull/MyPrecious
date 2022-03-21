@@ -27,6 +27,7 @@ coupled.
 - FileType Specific Plugins
   - [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
   - [vim-rails](https://github.com/tpope/vim-rails)
+  - [sniprun](https://github.com/michaelb/sniprun)
 - Git 
   - [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim)
 - Keybindings Reference
@@ -47,6 +48,10 @@ coupled.
     - Premade Snippet Plugins
       - [vim-snippets](https://github.com/honza/vim-snippets)
       - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
+- Treesitter/ Syntax Highlighting
+  - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+    - [nvim-treesitter-endwise](https://github.com/RRethy/nvim-treesitter-endwise)
+    - [playground](https://github.com/nvim-treesitter/playground)
 - Useful Editor Improvements
   - [emmet-vim](https://github.com/mattn/emmet-vim)
   - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
