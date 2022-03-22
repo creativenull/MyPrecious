@@ -53,14 +53,21 @@ ls.snippets = {
     s('auc', fmt(
     [[vim.api.nvim_create_autocmd('{}', {{
       pattern = '{}',
-      command = '{}'
+      command = '{}',
+      {}
     }})]], 
-    {i(1), i(2), i(3)})),
+    {i(1), i(2), i(3), c(4,{
+      sn(nil, {i(1), {
+        fmt([[group = {}]], )}
+      }),
+      t''
+      })})),
 
-    s(agroup, c(1, {
-      t("some text here"),
-      i(nil, 'Heres something else'),
-      t("this closes out the choices") }))
+    s('agroup', c(1, {
+      t'some text',
+      t("some other text"),
+      sn(nil, {i(1), t"some next text"})
+      }))
     }
   }
 
