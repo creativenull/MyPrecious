@@ -50,18 +50,18 @@ ls.snippets = {
     --    command = '{}'{}
     --    }), {i(1), i(2), i(3), c(4, sn(nil, fmt(",\n  group = {}"), i(0))), t""}]]))
 
-    s('auc', fmt(
+    s({
+      trig = 'auc',
+      name = 'Create Autocmd',
+      dscr = 'create autocmd with optional group tag',
+    }, fmt(
     [[vim.api.nvim_create_autocmd('{}', {{
-      pattern = '{}',
-      command = '{}',
+      {},
+      {},
       {}
     }})]], 
-    {i(1), i(2), i(3), c(4,{
-      sn(nil, {i(1), {
-        fmt([[group = {}]], )}
-      }),
-      t''
-      })})),
+    {i(1, event), c(2, {t"pattern = '{}'", t"command = '{}'", t"group = "}), c(3, {t'pattern = ', t'command = ', t'group = ', t''}), c(4,{ t'group = ', t''})}
+    )),
 
     s('agroup', c(1, {
       t'some text',
