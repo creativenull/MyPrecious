@@ -41,7 +41,7 @@ local plugins = {
   'sniprun',             -- https://github.com/michaelb/sniprun
 
   -- Fuzzy / File Finder
-  'harpoon',
+  'harpoon', -- https://github.com/ThePrimeagen/harpoon
   'telescope',           -- https://github.com/nvim-telescope/telescope.nvim
 
   -- Git
