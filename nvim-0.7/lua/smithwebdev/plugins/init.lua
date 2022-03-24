@@ -19,39 +19,41 @@ packer.init {
 local plugins = {
 
   -- Aesthetics --
-  'animate',             -- https://github.com/camspiers/animate.vim
-  'indent_blankline',    -- https://github.com/lukas-reineke/indent-blankline.nvim
-  'vim-smoothie',        -- https://github.com/psliwka/vim-smoothie
+  'animate',          -- https://github.com/camspiers/animate.vim
+  'indent_blankline', -- https://github.com/lukas-reineke/indent-blankline.nvim
+  'vim-smoothie',     -- https://github.com/psliwka/vim-smoothie
 
   -- Completion & Snippets -- 
-  'luasnip',             -- https://github.com/L3MON4D3/LuaSnip
-  'cmp',                 -- https://github.com/hrsh7th/nvim-cmp
+  'luasnip',          -- https://github.com/L3MON4D3/LuaSnip
+  'cmp',              -- https://github.com/hrsh7th/nvim-cmp
 
   -- Editing
-  'easyalign',          -- https://github.com/junegunn/vim-easy-align
-  'emmet',               -- https://github.com/mattn/emmet-vim
-  'hlslens',             -- https://github.com/kevinhwang91/nvim-hlslens
-  'marks',               -- https://github.com/chentau/marks.nvim
-  'peekabo',             -- https://github.com/junegunn/vim-peekaboo
-  'surround',            -- https://github.com/tpope/vim-surround
+  'easyalign',        -- https://github.com/junegunn/vim-easy-align
+  'emmet',            -- https://github.com/mattn/emmet-vim
+  'hlslens',          -- https://github.com/kevinhwang91/nvim-hlslens
+  'leap',             -- https://github.com/ggandor/leap.nvim
+  'marks',            -- https://github.com/chentau/marks.nvim
+  'peekabo',          -- https://github.com/junegunn/vim-peekaboo
+  'surround',         -- https://github.com/tpope/vim-surround
 
   -- Filetype
-  'markdown_preview',    -- https://github.com/iamcco/markdown-preview.nvim
-  'rails',               -- https://github.com/tpope/vim-rails
-  'sniprun',             -- https://github.com/michaelb/sniprun
+  'markdown_preview', -- https://github.com/iamcco/markdown-preview.nvim
+  'rails',            -- https://github.com/tpope/vim-rails
+  'sniprun',          -- https://github.com/michaelb/sniprun
 
   -- Fuzzy / File Finder
-  'harpoon', -- https://github.com/ThePrimeagen/harpoon
-  'telescope',           -- https://github.com/nvim-telescope/telescope.nvim
+  'harpoon',          -- https://github.com/ThePrimeagen/harpoon
+  'lir',              -- https://github.com/tamago324/lir.nvim
+  'telescope',        -- https://github.com/nvim-telescope/telescope.nvim
 
   -- Git
-  'lazygit',             -- https://github.com/kdheepak/lazygit.nvim
+  'lazygit',          -- https://github.com/kdheepak/lazygit.nvim
 
   -- Keybinds
-  'whichkey',            -- https://github.com/folke/which-key.nvim
+  'whichkey',         -- https://github.com/folke/which-key.nvim
 
   -- Treesitter/ Syntax Highlighting
-  'treesitter',          -- https://github.com/nvim-treesitter/nvim-treesitter
+  'treesitter',       -- https://github.com/nvim-treesitter/nvim-treesitter
 }
 
 packer.startup(function(use)
