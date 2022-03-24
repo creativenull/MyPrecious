@@ -29,7 +29,7 @@ ls.snippets = {
     s("req", fmt("local {} = require('{}')", { i(1), rep(1)})),
     s('keymap', fmt("{}noremap('{}',  '{}', {{ desc = '{}'}})", {i(1), i(2), i(3), i(4)})),
     s('pcreate', fmt([[
-    local M = {{}},
+    local M = {{}}
 
     M.plugin = {{
       '{}',
