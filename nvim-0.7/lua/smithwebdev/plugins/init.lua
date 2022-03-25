@@ -27,7 +27,8 @@ local plugins = {
   'luasnip',          -- https://github.com/L3MON4D3/LuaSnip
   'cmp',              -- https://github.com/hrsh7th/nvim-cmp
 
-  -- Editing
+  -- Editing --
+  'colorizer',           -- https://github.com/norcalli/nvim-colorizer.lua
   'easyalign',        -- https://github.com/junegunn/vim-easy-align
   'emmet',            -- https://github.com/mattn/emmet-vim
   'hlslens',          -- https://github.com/kevinhwang91/nvim-hlslens
@@ -35,24 +36,25 @@ local plugins = {
   'marks',            -- https://github.com/chentau/marks.nvim
   'peekabo',          -- https://github.com/junegunn/vim-peekaboo
   'surround',         -- https://github.com/tpope/vim-surround
+  'yode', -- https://github.com/hoschi/yode-nvim
 
-  -- Filetype
+  -- Filetype --
   'markdown_preview', -- https://github.com/iamcco/markdown-preview.nvim
   'rails',            -- https://github.com/tpope/vim-rails
   'sniprun',          -- https://github.com/michaelb/sniprun
 
-  -- Fuzzy / File Finder
+  -- Fuzzy / File Finder --
   'harpoon',          -- https://github.com/ThePrimeagen/harpoon
   'lir',              -- https://github.com/tamago324/lir.nvim
   'telescope',        -- https://github.com/nvim-telescope/telescope.nvim
 
-  -- Git
+  -- Git --
   'lazygit',          -- https://github.com/kdheepak/lazygit.nvim
 
-  -- Keybinds
+  -- Keybinds --
   'whichkey',         -- https://github.com/folke/which-key.nvim
 
-  -- Treesitter/ Syntax Highlighting
+  -- Treesitter/ Syntax Highlighting --
   'treesitter',       -- https://github.com/nvim-treesitter/nvim-treesitter
 }
 
