@@ -80,3 +80,4 @@ nnoremap("<C-j>",        "<C-w><C-j>",              { desc = "Go to the bottom w
 nnoremap("<C-k>",        "<C-w><C-k>",              { desc = "Go to the top window" })
 
 --vim.api.nvim_set_keymap('i', '<c-l>', '<cmd>lua EscapePair()<CR>', default_opts)
+nnoremap("<leader><leader>ht", ":helptags $VIMRUNTIME/doc<CR>", { desc = "Connect VIM/Neovim help docs to editor paths" })

@@ -60,7 +60,7 @@ ls.snippets = {
       {},
       {}
     }})]], 
-    {i(1, event), c(2, {t"pattern = '{}'", t"command = '{}'", t"group = "}), c(3, {t'pattern = ', t'command = ', t'group = ', t''}), c(4,{ t'group = ', t''})}
+    {i(1, 'event'), c(2, {t"pattern = '{}'", t"command = '{}'", t"group = "}), c(3, {t'pattern = ', t'command = ', t'group = ', t''}), c(4,{ t'group = ', t''})}
     )),
 
     s('agroup', c(1, {
