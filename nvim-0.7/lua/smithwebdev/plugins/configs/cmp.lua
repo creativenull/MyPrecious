@@ -28,6 +28,8 @@ M.plugin = {
     local cmp = require('cmp')
     local lspkind = require('lspkind')
     local luasnip = require('luasnip')
+    local u = require("smithwebdev.core.utils")
+    local trig = u.trigger_completion
 
     lspkind.init()
 
@@ -125,6 +127,8 @@ M.plugin = {
       },
     })
   end
+
+  --inoremap('<CR>', trig)
 }
 
 return M
