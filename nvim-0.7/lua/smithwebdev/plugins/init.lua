@@ -21,6 +21,7 @@ local plugins = {
   -- Aesthetics --
   'animate',          -- https://github.com/camspiers/animate.vim
   'indent_blankline', -- https://github.com/lukas-reineke/indent-blankline.nvim
+  'lush',             -- https://github.com/rktjmp/lush.nvim
   'vim-smoothie',     -- https://github.com/psliwka/vim-smoothie
 
   -- Completion & Snippets -- 
@@ -28,7 +29,7 @@ local plugins = {
   'cmp',              -- https://github.com/hrsh7th/nvim-cmp
 
   -- Editing --
-  'colorizer',           -- https://github.com/norcalli/nvim-colorizer.lua
+  'colorizer',        -- https://github.com/norcalli/nvim-colorizer.lua
   'easyalign',        -- https://github.com/junegunn/vim-easy-align
   'emmet',            -- https://github.com/mattn/emmet-vim
   'hlslens',          -- https://github.com/kevinhwang91/nvim-hlslens
@@ -36,7 +37,8 @@ local plugins = {
   'marks',            -- https://github.com/chentau/marks.nvim
   'peekabo',          -- https://github.com/junegunn/vim-peekaboo
   'surround',         -- https://github.com/tpope/vim-surround
-  'yode', -- https://github.com/hoschi/yode-nvim
+  'yode',             -- https://github.com/hoschi/yode-nvim
+  'zen', -- https://github.com/folke/zen-mode.nvim
 
   -- Filetype --
   'markdown_preview', -- https://github.com/iamcco/markdown-preview.nvim
@@ -53,6 +55,9 @@ local plugins = {
 
   -- Keybinds --
   'whichkey',         -- https://github.com/folke/which-key.nvim
+
+  -- LSP/Navigator --
+  'navigator',        -- https://github.com/ray-x/navigator.lua
 
   -- Treesitter/ Syntax Highlighting --
   'treesitter',       -- https://github.com/nvim-treesitter/nvim-treesitter
