@@ -67,8 +67,17 @@ ls.snippets = {
       t'some text',
       t("some other text"),
       sn(nil, {i(1), t"some next text"})
-      }))
-    }
-  }
+    }))
+  },
+  eruby = {
+    s({
+      trig = 'ltc',
+      name = 'Link to with class',
+      dscr = 'Link_to tag with added class option'
+    }, fmt(
+    [[link_to '{}', {}_path, class: '{}']],
+    {i(1), i(2), i(3)}))
+  },
+}
 
-  print('snippets installed!')
+print('snippets installed!')
