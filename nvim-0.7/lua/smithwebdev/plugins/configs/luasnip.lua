@@ -4,9 +4,10 @@ M.plugin = {
   'L3MON4D3/LuaSnip',
 
   config = function()
-    require('smithwebdev.snippets')
+    --require('smithwebdev.snippets')
     require('luasnip.loaders.from_vscode').lazy_load()
     require('luasnip.loaders.from_snipmate').lazy_load()
+    require("luasnip.loaders.from_lua").load({paths = "smithwebdev.snippets.langs"})
     local ls = require('luasnip')
     local types = require('luasnip.util.types')
 

@@ -15,3 +15,4 @@ auto [[
         au TextChanged,InsertLeave * if index(blacklist, &ft) < 0 && &modifiable && &buftype == ''| silent w | endif
     augroup END
   ]]
+

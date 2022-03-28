@@ -17,7 +17,7 @@ local rep   = require('luasnip.extras').rep
 
 local date  = function() return { os.date('%Y-%m-%d') } end
 
-ls.snippets = {
+ls.add_snippets = {
   all = {
     s("ternary", {
       i(1, "cond"), t(" ? "), i(2, "then"), t(" : "), i(3, "else")

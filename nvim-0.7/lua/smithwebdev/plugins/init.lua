@@ -21,6 +21,7 @@ local plugins = {
   -- Aesthetics --
   'animate',          -- https://github.com/camspiers/animate.vim
   'indent_blankline', -- https://github.com/lukas-reineke/indent-blankline.nvim
+--  'colorbuddy', -- https://github.com/tjdevries/colorbuddy.nvim
   'lush',             -- https://github.com/rktjmp/lush.nvim
   'vim-smoothie',     -- https://github.com/psliwka/vim-smoothie
 
