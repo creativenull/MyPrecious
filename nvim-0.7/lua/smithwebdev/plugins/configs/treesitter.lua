@@ -3,8 +3,9 @@ local M = {}
 M.plugin = {
   'nvim-treesitter/nvim-treesitter',
   'RRethy/nvim-treesitter-endwise',              -- https://github.com/RRethy/nvim-treesitter-endwise
-  'RRethy/nvim-treesitter-textsubjects',         -- https://github.com/RRethy/nvim-treesitter-textsubjects
+  'nvim-treesitter/nvim-treesitter-refactor',
   'nvim-treesitter/nvim-treesitter-textobjects', -- https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+  'RRethy/nvim-treesitter-textsubjects',         -- https://github.com/RRethy/nvim-treesitter-textsubjects
 
 
   config = function()

@@ -23,6 +23,7 @@ local plugins = {
   'indent_blankline', -- https://github.com/lukas-reineke/indent-blankline.nvim
 --  'colorbuddy', -- https://github.com/tjdevries/colorbuddy.nvim
   'lush',             -- https://github.com/rktjmp/lush.nvim
+  'statusline', -- https://github.com/beauwilliams/statusline.lua
   'vim-smoothie',     -- https://github.com/psliwka/vim-smoothie
 
   -- Completion & Snippets -- 
@@ -30,6 +31,7 @@ local plugins = {
   'cmp',              -- https://github.com/hrsh7th/nvim-cmp
 
   -- Editing --
+  'autopairs',  -- https://github.com/windwp/nvim-autopairs
   'colorizer',        -- https://github.com/norcalli/nvim-colorizer.lua
   'easyalign',        -- https://github.com/junegunn/vim-easy-align
   'emmet',            -- https://github.com/mattn/emmet-vim
