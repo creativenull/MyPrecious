@@ -1,1 +1,0 @@
-print("eRuby snippets loaded")

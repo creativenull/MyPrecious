@@ -27,6 +27,10 @@ M.plugin = {
       },
     }
 
+    ls.filetype_extend("ruby", { "html" })
+    ls.filetype_extend("all", { "_" })
+
+
     -- keybinds
     vim.keymap.set("i", "<c-l>", function()
       if ls.choice_active() then 
