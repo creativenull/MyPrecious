@@ -73,4 +73,5 @@ packer.startup(function(use)
   end
 end)
 
+vim.cmd 'PackerSync'
 print('Plugins connected...')

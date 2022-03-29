@@ -6,13 +6,13 @@ vim.api.nvim_create_autocmd('FileType', {
   command = 'wincmd L'
   })
 
-local auto = vim.cmd
-auto [[
-    augroup autosave
-        au!
-        let blacklist = ['packer', 'netrw', 'TelescopePrompt', 'lspinfo', 'lsp-installer', 'query', 'tsplayground', 'text', 'harpoon', 'scratch']
-        au BufEnter * if &filetype == "" | setlocal ft=text | endif
-        au TextChanged,InsertLeave * if index(blacklist, &ft) < 0 && &modifiable && &buftype == ''| silent w | endif
-    augroup END
-  ]]
+--local auto = vim.cmd
+--auto [[
+--    augroup autosave
+--        au!
+--        let blacklist = ['packer', 'netrw', 'TelescopePrompt', 'lspinfo', 'lsp-installer', 'query', 'tsplayground', 'text', 'harpoon', 'scratch']
+--        au BufEnter * if &filetype == "" | setlocal ft=text | endif
+--        au TextChanged,InsertLeave * if index(blacklist, &ft) < 0 && &modifiable && &buftype == ''| silent w | endif
+--    augroup END
+--  ]]
 

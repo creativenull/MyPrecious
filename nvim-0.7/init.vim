@@ -10,6 +10,7 @@ set packpath-=~/.local/share/nvim/site/after
 
 set runtimepath+=~/.config/nvim-nightly/after
 set runtimepath^=~/.config/nvim-nightly
+set runtimepath^=~/.config/nvim-nightly/luasnippets
 set runtimepath+=~/.local/share/nvim-nightly/site/after
 set runtimepath^=~/.local/share/nvim-nightly/site
 set packpath^=~/.config/nvim-nightly
