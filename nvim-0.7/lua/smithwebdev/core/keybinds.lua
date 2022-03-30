@@ -23,7 +23,7 @@ nnoremap('L',                 '$',                       { desc = 'Alternative E
 nnoremap('Y',                 'y$',                      { desc = 'Alternative Copy to End of Line'})
 nnoremap('<',                 '<<',                      { desc = 'Alternative Shift Tab (indent)'})
 nnoremap('>',                 '>>',                      { desc = 'Alternative Tab (indent)'})
-vnoremap('p',                 '_dP',                     { desc = 'Maintain registered info when pasting'})
+--vnoremap('p',                 '_dP',                     { desc = 'Maintain registered info when pasting'})
 nnoremap('<leader>w',         ':w<CR>',                  { desc = 'Save shortcut'})
 nnoremap('<leader>W',         ':wall<CR>',               { desc = 'Save all shortcut'})
 
