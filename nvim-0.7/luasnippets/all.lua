@@ -34,4 +34,3 @@ end
 --	pair("`", "`", neg, even_count),
 --	s({trig="{,", wordTrig=false, hidden=true}, { t({"{","\t"}), i(1), t({"", "}"}) }),
 --}
-print("Global snippets loaded")
