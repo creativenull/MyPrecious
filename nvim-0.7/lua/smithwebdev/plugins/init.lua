@@ -62,6 +62,9 @@ local plugins = {
   -- LSP/Navigator --
   'navigator',        -- https://github.com/ray-x/navigator.lua
 
+  -- Testing --
+  'vim-ultest', -- https://github.com/rcarriga/vim-ultest
+ 
   -- Treesitter/ Syntax Highlighting --
   'treesitter',       -- https://github.com/nvim-treesitter/nvim-treesitter
 }

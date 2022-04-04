@@ -6,6 +6,11 @@ vim.api.nvim_create_autocmd('FileType', {
   command = 'wincmd L'
   })
 
+local UltestRunner = vim.api.nvim_create_augroup('UltestRunner', {clear = true})
+vim.api.nvim_create_autocmd('BufWritePost', {
+  pattern = '*',
+  command = 'UltestNearest'
+})
 --local auto = vim.cmd
 --auto [[
 --    augroup autosave

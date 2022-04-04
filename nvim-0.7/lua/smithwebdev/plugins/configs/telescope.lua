@@ -22,16 +22,19 @@ M.plugin = {
 
     telescope.setup({
       defaults = {
-        layout_config = { prompt_position = 'top' },
-        layout_strategy = 'flex',
-        sorting_strategy = 'ascending',
+        layout_config = { prompt_position = 'bottom' },
+        layout_strategy = 'horizontal',
+        sorting_strategy = 'descending',
         use_less = false,
       },
 
       extensions = {
         file_browser = {
           mappings = {
-            ['i'] = {},
+            ['i'] = {
+              ['<esc>'] = require("telescope.actions").close,
+              ['jj'] = {'<esc', type = 'command' },
+            },
             ['n'] = {},
           },
         },
