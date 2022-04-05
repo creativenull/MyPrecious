@@ -33,10 +33,10 @@ M.plugin = {
     nnoremap('<leader><leader>rbu',     ':!bundle update<CR>',                      { desc = 'Bundle Update Command'})
 
     -- Rails Database Commands
-    nnoremap('<leader><leader>rdbc',    ':!rails db:create<CR>',                    { desc = 'Rails DB:Migrate Command'})
-    nnoremap('<leader><leader>rdbd',    ':!rails db:drop<CR>',                      { desc = 'Rails DB:Migrate Command'})
+    nnoremap('<leader><leader>rdba',    ':!rails db:drop db:create db:migrate<CR>', { desc = 'Rails DB:Drop Create & Migrate Command'})
+    nnoremap('<leader><leader>rdbc',    ':!rails db:create<CR>',                    { desc = 'Rails DB:Create Command'})
+    nnoremap('<leader><leader>rdbd',    ':!rails db:drop<CR>',                      { desc = 'Rails DB:Drop Command'})
     nnoremap('<leader><leader>rdbm',    ':!rails db:migrate<CR>',                   { desc = 'Rails DB:Migrate Command'})
-    nnoremap('<leader><leader>rdbdcm',  ':!rails db:drop db:create db:migrate<CR>', { desc = 'Rails DB:Drop Create & Migrate Command'})
     nnoremap('<leader><leader>rdbr',    ':!rails db:rollback<CR>',                  { desc = 'Rails DB:Rollback Command'})
     nnoremap('<leader><leader>rdbs',    ':!rails db:setup<CR>',                     { desc = 'Rails DB:Setup Command'})
     nnoremap('<leader><leader>rdbS',    ':!rails db:seed<CR>',                      { desc = 'Rails DB:Seed Command'})
@@ -103,7 +103,7 @@ M.plugin = {
 
 
     -- Partial Extraction
-    vnoremap('<leader><leader>rex',     ':Extract ') --,             'extract to partial'
+    vnoremap('<leader><leader>rex',     ':Extract ',                                { desc = 'extract to partial'})
 
     -- Rfactory
     nnoremap('<leader><leader>rf',      '<cmd>Rfactory<CR>',                        { desc = 'Edit Factory File'})
@@ -112,36 +112,37 @@ M.plugin = {
     nnoremap('<leader><leader>rft',     '<cmd>RTfactory<CR>',                       { desc = 'Edit Factory File in Tab'})
 
     -- Preview Page
-    nnoremap('<leader><leader>rp',      ':Preview<CR>') --,          'open web browser for current view'
+    nnoremap('<leader><leader>rp',      ':Preview<CR>',                             { desc = 'open web browser for current view'})
 
     -- Run Ctags for Ruby/Rails program, includes gems
     nnoremap('<leader><leader>rt',      ':!ctags -R --languages=Ruby --exclude=.git --exclude=log . $(bundle list --paths) && echo "tags" >> .gitignore<CR>') --,  create ctags for project incl bundled gems
 
 
     -- Annotate Gem
-    nnoremap('<leader><leader>rgai',    ':Generate annotate:install<CR>',           { desc = 'Rails Generate Command'})
+    nnoremap('<leader><leader>rgai',    ':Generate annotate:install<CR>',           { desc = 'Rails Generate Annotate Install'})
 
     -- Devise Gem
-    nnoremap('<leader><leader>rgdi',    ':Generate devise:install <CR>',            { desc = 'Rails Generate Command'})
-    nnoremap('<leader><leader>rgdc',    ':Generate devise:controllers <CR>',        { desc = 'Rails Generate Command'})
-    nnoremap('<leader><leader>rgdv',    ':Generate devise:views <CR>',              { desc = 'Rails Generate Command'})
+    nnoremap('<leader><leader>rgdi',    ':Generate devise:install <CR>',            { desc = 'Rails Generate Devise Install'})
+    nnoremap('<leader><leader>rgdc',    ':Generate devise:controllers<Space>',      { desc = 'Rails Generate Devise Controllers'})
+    nnoremap('<leader><leader>rgdm',    ':Generate devise<Space>',                  { desc = 'Rails Generate Devise Model'})
+    nnoremap('<leader><leader>rgdv',    ':Generate devise:views<Space>',            { desc = 'Rails Generate Devise Views'})
 
     -- Rspec Gem
-    nnoremap('<leader><leader>rgRch',   ':Generate rspec:channel<CR>',              { desc = 'Rails Generate Command'})
-    nnoremap('<leader><leader>rgRc',    ':Generate rspec:controller<CR>',           { desc = 'Rails Generate Command'})
-    nnoremap('<leader><leader>rgRf',    ':Generate rspec:feature<CR>',              { desc = 'Rails Generate Command'})
-    nnoremap('<leader><leader>rgRg',    ':Generate rspec:generator<CR>',            { desc = 'Rails Generate Command'})
-    nnoremap('<leader><leader>rgRh',    ':Generate rspec:helper<CR>',               { desc = 'Rails Generate Command'})
-    nnoremap('<leader><leader>rgRi',    ':Generate rspec:install<CR>',              { desc = 'Rails Generate Command'})
-    nnoremap('<leader><leader>rgRI',    ':Generate rspec:integration<CR>',          { desc = 'Rails Generate Command'})
-    nnoremap('<leader><leader>rgRj',    ':Generate rspec:job<CR>',                  { desc = 'Rails Generate Command'})
-    nnoremap('<leader><leader>rgRm',    ':Generate rspec:mailer<CR>',               { desc = 'Rails Generate Command'})
-    nnoremap('<leader><leader>rgRmbox', ':Generate rspec:mailbox<CR>',              { desc = 'Rails Generate Command'})
-    nnoremap('<leader><leader>rgRm',    ':Generate rspec:model<CR>',                { desc = 'Rails Generate Command'})
-    nnoremap('<leader><leader>rgRr',    ':Generate rspec:request<CR>',              { desc = 'Rails Generate Command'})
-    nnoremap('<leader><leader>rgRs',    ':Generate rspec:scaffold<CR>',             { desc = 'Rails Generate Command'})
-    nnoremap('<leader><leader>rgRS',    ':Generate rspec:system<CR>',               { desc = 'Rails Generate Command'})
-    nnoremap('<leader><leader>rgRv',    ':Generate rspec:view<CR>',                 { desc = 'Rails Generate Command'})
+    nnoremap('<leader><leader>rgRch',   ':Generate rspec:channel<CR>',              { desc = 'Rails Generate Rspec Channel'})
+    nnoremap('<leader><leader>rgRc',    ':Generate rspec:controller<CR>',           { desc = 'Rails Generate Rspec Controller'})
+    nnoremap('<leader><leader>rgRf',    ':Generate rspec:feature<CR>',              { desc = 'Rails Generate Rspec Feature'})
+    nnoremap('<leader><leader>rgRg',    ':Generate rspec:generator<CR>',            { desc = 'Rails Generate Rspec Generator'})
+    nnoremap('<leader><leader>rgRh',    ':Generate rspec:helper<CR>',               { desc = 'Rails Generate Rspec Helper'})
+    nnoremap('<leader><leader>rgRi',    ':Generate rspec:install<CR>',              { desc = 'Rails Generate Rspec Install'})
+    nnoremap('<leader><leader>rgRI',    ':Generate rspec:integration<CR>',          { desc = 'Rails Generate Rspec Integration'})
+    nnoremap('<leader><leader>rgRj',    ':Generate rspec:job<CR>',                  { desc = 'Rails Generate Rspec Job'})
+    nnoremap('<leader><leader>rgRm',    ':Generate rspec:mailer<CR>',               { desc = 'Rails Generate Rspec Mailer'})
+    nnoremap('<leader><leader>rgRmbox', ':Generate rspec:mailbox<CR>',              { desc = 'Rails Generate Rspec Mailbox'})
+    nnoremap('<leader><leader>rgRm',    ':Generate rspec:model<CR>',                { desc = 'Rails Generate Rspec Model'})
+    nnoremap('<leader><leader>rgRr',    ':Generate rspec:request<CR>',              { desc = 'Rails Generate Rspec Request'})
+    nnoremap('<leader><leader>rgRs',    ':Generate rspec:scaffold<CR>',             { desc = 'Rails Generate Rspec Scaffold'})
+    nnoremap('<leader><leader>rgRS',    ':Generate rspec:system<CR>',               { desc = 'Rails Generate Rspec System'})
+    nnoremap('<leader><leader>rgRv',    ':Generate rspec:view<CR>',                 { desc = 'Rails Generate Rspec View'})
   end
 }
 
