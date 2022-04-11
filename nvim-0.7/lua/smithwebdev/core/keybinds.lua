@@ -88,5 +88,10 @@ nnoremap("<C-k>",              "<C-w><C-k>",                    { desc = "Go to 
 --------------------------------------------------------------------------------
 nnoremap("<leader><leader>e",  ":Lex 30<CR>",                   { desc = "Open File Explorer to the left"})
 
+-- Highly Used CLI commands
+--------------------------------------------------------------------------------
+nnoremap('<leader><leader>cya', ':!yarn add<Space>', { desc = 'Yarn add command'})
+nnoremap('<leader><leader>ct', ':!touch<Space>', { desc = 'Touch cli command'})
+
 --vim.api.nvim_set_keymap('i', '<c-l>', ':lua EscapePair()<CR>', default_opts)
 nnoremap("<leader><leader>ht", ":helptags $VIMRUNTIME/doc<CR>", { desc = "Connect VIM/Neovim help docs to editor paths" })
