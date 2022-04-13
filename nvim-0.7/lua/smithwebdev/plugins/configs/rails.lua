@@ -127,6 +127,11 @@ M.plugin = {
     nnoremap('<leader><leader>rgdm',    ':Generate devise<Space>',                  { desc = 'Rails Generate Devise Model'})
     nnoremap('<leader><leader>rgdv',    ':Generate devise:views<Space>',            { desc = 'Rails Generate Devise Views'})
 
+    -- LiveReload Gem
+    nnoremap('<leader><leader>rlri',    ':!rails livereload:install<CR>',           { desc = 'Install Rails Live Reload'})
+    nnoremap('<leader><leader>rlrd',    ':!rails livereload:disable<CR>',           { desc = 'Disable Rails Live Reload'})
+    nnoremap('<leader><leader>rlre',    ':!rails livereload:enable<CR>',            { desc = 'Enable Rails Live Reload'})
+
     -- Rspec Gem
     nnoremap('<leader><leader>rgRch',   ':Generate rspec:channel<CR>',              { desc = 'Rails Generate Rspec Channel'})
     nnoremap('<leader><leader>rgRc',    ':Generate rspec:controller<CR>',           { desc = 'Rails Generate Rspec Controller'})
