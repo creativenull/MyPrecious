@@ -21,7 +21,7 @@ local plugins = {
   -- Aesthetics --
   'animate',          -- https://github.com/camspiers/animate.vim
   'indent_blankline', -- https://github.com/lukas-reineke/indent-blankline.nvim
---  'colorbuddy', -- https://github.com/tjdevries/colorbuddy.nvim
+  --  'colorbuddy', -- https://github.com/tjdevries/colorbuddy.nvim
   'lush',             -- https://github.com/rktjmp/lush.nvim
   'statusline', -- https://github.com/beauwilliams/statusline.lua
   'vim-smoothie',     -- https://github.com/psliwka/vim-smoothie
@@ -61,14 +61,16 @@ local plugins = {
   'whichkey',         -- https://github.com/folke/which-key.nvim
 
   -- LSP/Navigator --
-  'navigator',        -- https://github.com/ray-x/navigator.lua
+  'lsp',
+  --'navigator',        -- https://github.com/ray-x/navigator.lua
 
-  -- Project Tracking --
+  -- Project Organization --
+  'vim-mkdir', -- https://github.com/pbrisbin/vim-mkdir
   'orgmode', --https://github.com/nvim-orgmode/orgmode
 
   -- Testing --
   'vim-ultest', -- https://github.com/rcarriga/vim-ultest
- 
+
   -- Treesitter/ Syntax Highlighting --
   'treesitter',       -- https://github.com/nvim-treesitter/nvim-treesitter
 }

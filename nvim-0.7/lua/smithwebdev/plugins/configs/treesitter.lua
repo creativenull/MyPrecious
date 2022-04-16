@@ -19,6 +19,7 @@ M.plugin = {
         'javascript',
         'query',
       },
+      sync_install = true,
      indent = {
         enable = true,
       },
