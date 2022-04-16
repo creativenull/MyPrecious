@@ -23,4 +23,4 @@ nnoremap('<leader>lK', ":Lspsaga hover_doc<cr>",                                
 nnoremap('<leader>lN', ':Lspsaga diagnostic_jump_prev<cr>',                                 { desc = "Go To Previous Diagnostic"})
 nnoremap('<leader>lr', ':Lspsaga rename<cr>',                                               { desc = "Rename"})
 --map(0, "n", "<C-u>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1, '<c-u>')<cr>", {})
---map(0, "n", "<C-d>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1, '<c-d>')<cr>", {})
+--map(0, "n", "<C-d>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(2, '<c-d>')<cr>", {})

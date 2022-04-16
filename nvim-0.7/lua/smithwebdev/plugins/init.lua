@@ -61,7 +61,8 @@ local plugins = {
   'whichkey',         -- https://github.com/folke/which-key.nvim
 
   -- LSP/Navigator --
-  'lsp',
+  'lspconfig',
+  'lspsaga',
   --'navigator',        -- https://github.com/ray-x/navigator.lua
 
   -- Project Organization --
