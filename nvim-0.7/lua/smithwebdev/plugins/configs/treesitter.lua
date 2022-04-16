@@ -7,15 +7,25 @@ M.plugin = {
   'nvim-treesitter/nvim-treesitter-textobjects', -- https://github.com/nvim-treesitter/nvim-treesitter-textobjects
   'RRethy/nvim-treesitter-textsubjects',         -- https://github.com/RRethy/nvim-treesitter-textsubjects
 
+  run = ':TSUpdate',
 
   config = function()
     require("nvim-treesitter.configs").setup({
-      ensure_installed = 'maintained',
+      ensure_installed = {
+        'lua',
+        'ruby',
+        'html',
+        'css',
+        'javascript',
+        'query',
+      },
      indent = {
         enable = true,
       },
       highlight = {
         enable = true,
+        disable = {'org'},
+        additional_vim_regex_highlighting = {'org'},
       },
       endwise = {
         enable = true,
