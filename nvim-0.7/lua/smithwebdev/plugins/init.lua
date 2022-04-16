@@ -40,6 +40,7 @@ local plugins = {
   'marks',            -- https://github.com/chentau/marks.nvim
   'peekabo',          -- https://github.com/junegunn/vim-peekaboo
   'surround',         -- https://github.com/tpope/vim-surround
+  'vim-exchange', -- https://github.com/tommcdo/vim-exchange
   'yode',             -- https://github.com/hoschi/yode-nvim
   'zen', -- https://github.com/folke/zen-mode.nvim
 
@@ -61,6 +62,9 @@ local plugins = {
 
   -- LSP/Navigator --
   'navigator',        -- https://github.com/ray-x/navigator.lua
+
+  -- Project Tracking --
+  'orgmode', --https://github.com/nvim-orgmode/orgmode
 
   -- Testing --
   'vim-ultest', -- https://github.com/rcarriga/vim-ultest
