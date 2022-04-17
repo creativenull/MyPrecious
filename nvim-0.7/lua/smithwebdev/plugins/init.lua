@@ -12,8 +12,8 @@ local packer = require'packer'
 -- Use your local data path and not plugin/
 -- this is `~/.local/share/nvim/site/plugin/packer_compiled.lua` in WSL/Linux and MacOS
 packer.init {
-  package_root = os.getenv('HOME') .. '/.local/share/nvim/site/pack',
-  compile_path = os.getenv('HOME') .. '/.config/nvim/plugin/packer_compiled.vim',
+  package_root = vim.fn.expand('~/.local/share/nvim/site/pack'),
+  compile_path = vim.fn.expand('~/.local/share/nvim/site/plugin/packer_compiled.lua'),
 }
 
 local plugins = {
