@@ -120,32 +120,32 @@ M.plugin = {
 
     cmp.setup.cmdline('/', {
       mapping = cmp.mapping.preset.cmdline({
-        ['<C-j>'] = cmp.mapping.select_next_item(),
-        ['<C-k>'] = cmp.mapping.select_prev_item(),
-        ['jk'] = cmp.mapping.confirm({ select = true })
+        --['<C-j>'] = cmp.mapping.select_next_item(),
+        --['<C-k>'] = cmp.mapping.select_prev_item(),
+        --['jk'] = cmp.mapping.confirm({ select = true })
       }),
       sources = {
         { name = 'buffer', keyword_length = 5  }
       },
-      view = {
-        entries = { name = 'wildmenu', separator = '|' }
-      }
+      --view = {
+      --  entries = { name = 'wildmenu', separator = '|' }
+      --}
     })
 
     cmp.setup.cmdline(':', {
       mapping = cmp.mapping.preset.cmdline({
-        ['<C-j>'] = cmp.mapping.select_next_item(),
-        ['<C-k>'] = cmp.mapping.select_prev_item(),
-        ['jk'] = cmp.mapping.confirm({ select = true })
+        --['<C-j>'] = cmp.mapping.select_next_item(),
+        --['<C-k>'] = cmp.mapping.select_prev_item(),
+        --['jk'] = cmp.mapping.confirm({ select = true })
       }),
       sources = cmp.config.sources({
         { name = 'path' }
       }, {
         { name = 'cmdline' }
       }),
-      view = {
-        entries = { name = 'wildmenu', separator = '|' }
-      }
+      --view = {
+      --  entries = { name = 'wildmenu', separator = '|' }
+      --}
     })
 
     -- local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())

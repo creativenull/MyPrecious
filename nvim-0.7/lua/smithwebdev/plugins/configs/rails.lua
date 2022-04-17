@@ -1,5 +1,6 @@
 local M = {}
 
+vim.g.blockle_mapping = '<leader>bl'
 M.plugin = {
   'tpope/vim-rails',
 
