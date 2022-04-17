@@ -12,8 +12,8 @@ local packer = require'packer'
 -- Use your local data path and not plugin/
 -- this is `~/.local/share/nvim/site/plugin/packer_compiled.lua` in WSL/Linux and MacOS
 packer.init {
-  package_root = os.getenv('HOME') .. '/.local/share/nvim/site/pack',
-  compile_path = os.getenv('HOME') .. '/.config/nvim/plugin/packer_compiled.vim',
+  package_root = string.format('%s/site/pack', vim.fn.stdpath('data')),
+  compile_path = string.format('%s/site/plugin/packer_compiled.lua', vim.fn.stdpath('data')),
 }
 
 local plugins = {
@@ -85,5 +85,22 @@ packer.startup(function(use)
   end
 end)
 
-vim.cmd 'PackerSync'
+-- Autocmd to match the path in your config that is in
+-- lua/smithwebdev/plugins/*.lua or lua/smithwebdev/plugins/configs/*.lua
+-- and then create a packer compile file whenever you :w in those files
+local packer_group =  vim.api.nvim_create_augroup('packer_user_events', { clear = true })
+vim.api.nvim_create_autocmd('BufWritePost', {
+  group = packer_group,
+
+  pattern = '*.lua',
+
+  callback = function(event)
+    local found = event.file:find('.*smithwebdev/plugins.*') ~= nil
+
+    if found then
+      vim.cmd 'PackerCompile'
+    end
+  end,
+})
+
 print('Plugins connected...')
