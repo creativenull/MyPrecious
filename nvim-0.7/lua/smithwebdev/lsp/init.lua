@@ -8,8 +8,10 @@ local vnoremap = u.vnoremap
 
 nnoremap('<leader>ld', ':lua vim.lsp.buf.definition()<cr>',                                 { desc = "Go To Definition"})
 nnoremap('<leader>lD', ':lua vim.lsp.buf.declaration()<cr>',                                { desc = "Go To Declaration"})
-nnoremap('<leader>li', ":LspInfo<cr>",                                                      { desc = "Connected Language Servers"})
-nnoremap('<leader>lk', ":lua vim.lsp.buf.signature_help()<cr>",                             { desc = "Signature Help"})
+nnoremap('<leader>li', ':LspInfo<cr>',                                                      { desc = "Connected Language Servers"})
+nnoremap('<leader>lI', '<cmd>lua vim.lsp.buf.implementation()<CR>',                         { desc = "Go To Implementation"})
+nnoremap('<leader>lf', '<cmd>lua vim.lsp.buf.formatting()<CR>',                             { desc = "Format Code"})
+nnoremap('<leader>lk', ':lua vim.lsp.buf.signature_help()<cr>',                             { desc = "Signature Help"})
 nnoremap('<leader>ll', ':lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<cr>', { desc = "List Workspace Folders" })
 nnoremap('<leader>lr', ':lua vim.lsp.buf.references()<cr>',                                 { desc = "References"})
 nnoremap('<leader>lt', ':lua vim.lsp.buf.type_definition()<cr>',                            { desc = "Type Definition"})
@@ -24,3 +26,4 @@ nnoremap('<leader>lN', ':Lspsaga diagnostic_jump_prev<cr>',                     
 nnoremap('<leader>lr', ':Lspsaga rename<cr>',                                               { desc = "Rename"})
 --map(0, "n", "<C-u>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1, '<c-u>')<cr>", {})
 --map(0, "n", "<C-d>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(2, '<c-d>')<cr>", {})
+

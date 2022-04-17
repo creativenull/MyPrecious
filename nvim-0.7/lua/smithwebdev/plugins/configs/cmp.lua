@@ -76,7 +76,7 @@ M.plugin = {
         end, {'i', 's'}),
         ['<C-k>'] = cmp.mapping(function(fallback)
           if cmp.visible() then
-            cmp.select_next_item()
+            cmp.select_prev_item()
           elseif luasnip.jumpable(-1) then
             luasnip.jump(-1)
           else
@@ -119,7 +119,11 @@ M.plugin = {
     })
 
     cmp.setup.cmdline('/', {
-      mapping = cmp.mapping.preset.cmdline(),
+      mapping = cmp.mapping.preset.cmdline({
+        ['<C-j>'] = cmp.mapping.select_next_item(),
+        ['<C-k>'] = cmp.mapping.select_prev_item(),
+        ['jk'] = cmp.mapping.confirm({ select = true })
+      }),
       sources = {
         { name = 'buffer', keyword_length = 5  }
       },
@@ -129,7 +133,11 @@ M.plugin = {
     })
 
     cmp.setup.cmdline(':', {
-      mapping = cmp.mapping.preset.cmdline(),
+      mapping = cmp.mapping.preset.cmdline({
+        ['<C-j>'] = cmp.mapping.select_next_item(),
+        ['<C-k>'] = cmp.mapping.select_prev_item(),
+        ['jk'] = cmp.mapping.confirm({ select = true })
+      }),
       sources = cmp.config.sources({
         { name = 'path' }
       }, {
@@ -145,22 +153,6 @@ M.plugin = {
     --   capabilities = capabilities
     -- }
 
-    -- " gray
-    -- highlight! CmpItemAbbrDeprecated guibg=NONE gui=strikethrough guifg=#808080
-    -- " blue
-    -- highlight! CmpItemAbbrMatch guibg=NONE guifg=#569CD6
-    -- highlight! CmpItemAbbrMatchFuzzy guibg=NONE guifg=#569CD6
-    -- " light blue
-    -- highlight! CmpItemKindVariable guibg=NONE guifg=#9CDCFE
-    -- highlight! CmpItemKindInterface guibg=NONE guifg=#9CDCFE
-    -- highlight! CmpItemKindText guibg=NONE guifg=#9CDCFE
-    -- " pink
-    -- highlight! CmpItemKindFunction guibg=NONE guifg=#C586C0
-    -- highlight! CmpItemKindMethod guibg=NONE guifg=#C586C0
-    -- " front
-    -- highlight! CmpItemKindKeyword guibg=NONE guifg=#D4D4D4
-    -- highlight! CmpItemKindProperty guibg=NONE guifg=#D4D4D4
-    -- highlight! CmpItemKindUnit guibg=NONE guifg=#D4D4D4
   end
 }
 

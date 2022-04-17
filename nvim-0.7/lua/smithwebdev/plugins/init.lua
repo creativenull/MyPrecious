@@ -66,8 +66,8 @@ local plugins = {
   --'navigator',        -- https://github.com/ray-x/navigator.lua
 
   -- Project Organization --
-  'vim-mkdir', -- https://github.com/pbrisbin/vim-mkdir
   'orgmode', --https://github.com/nvim-orgmode/orgmode
+  'vim-mkdir', -- https://github.com/pbrisbin/vim-mkdir
 
   -- Testing --
   'vim-ultest', -- https://github.com/rcarriga/vim-ultest
